@@ -10,3 +10,5 @@ sudo docker run --rm -it -p 4000:4000 -v `pwd`:/site csw /bin/sh
 
 cd site/
 bundle exec jekyll serve -H 0.0.0.0
+
+bundle add webrick
