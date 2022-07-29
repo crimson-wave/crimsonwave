@@ -1,8 +1,21 @@
-
-body {
-    color: gray;
-  }
-  
-  h1 {
-    color: green;
-  } 
+.display_flex{
+  display: flex;
+  align-items: center;
+}
+.width100{
+  width: 100% !important;
+}
+.topartwork {
+  width: 100%;
+  margin-top: 60px;
+  padding: 0px;
+  border: 0px;
+}
+.subscribe{
+  background-color: #800000;
+}
+.subscribe_form {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
