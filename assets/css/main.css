@@ -1,21 +1,78 @@
-.display_flex{
+.dark_red_background {
+  background-color: #800000;
+  color: white;
+}
+
+.light_red_background {
+  background-color: #FF1717;
+  color: white;
+}
+
+.darck_blue_background {
+  background-color: #092056;
+  color: white;
+}
+
+.blue_background {
+  background-color: #2D6AF7;
+  color: white;
+}
+
+.light_blue_background {
+  background-color: #7599EB;
+  color: white;
+}
+
+.display_flex {
   display: flex;
   align-items: center;
 }
-.width100{
+
+.width100 {
   width: 100% !important;
 }
+
 .topartwork {
   width: 100%;
   margin-top: 60px;
   padding: 0px;
   border: 0px;
 }
-.subscribe{
-  background-color: #800000;
-}
+
 .subscribe_form {
   display: flex;
   flex-flow: column;
   align-items: center;
+}
+
+.w3-btn {
+  text-transform: uppercase;
+  padding: 6px;
+  font-size: 11px;
+  width: 100%;
+}
+
+.w3-input {
+  padding: 2px;
+}
+
+.w3-padding-8 {
+  padding-top: 8px !important;
+  padding-bottom: 8px !important;
+}
+
+.blue_div {
+  width: 25%;
+  height: 80px;
+  padding: 16px;
+  margin: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.tampons img{
+  height: 172px;
+  margin: 6px;
 }

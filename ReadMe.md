@@ -12,3 +12,11 @@ cd site/
 bundle exec jekyll serve -H 0.0.0.0
 
 bundle add webrick
+
+4. kill docker 
+    4.1. List containers
+    4.2  kill container
+
+sudo docker ps
+sudo docker kill <CONTAINER ID>
+
