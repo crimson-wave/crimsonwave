@@ -40,3 +40,14 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+collections:
+  contracepts:
+    output: true
+  healthcaresystems:
+    output: true
+  nonbinaryresources:
+    output: true 
+  selfloves:
+    output: true
+  transresources:
+    output: true    

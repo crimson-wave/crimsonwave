@@ -1,12 +1,11 @@
-<!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+---
+layout: default
+---
 
+{{ content }}
 
-<body class="page-post">
-
-{%- include header.html -%}
-
-<main class="page-content" aria-label="Content">
+<!--
+  <main class="page-content" aria-label="Content">
   <article class="post hentry" itemscope itemtype="http://schema.org/BlogPosting">
     <header class="post-header">
       <div class="wrapper">
@@ -17,23 +16,28 @@
             {{ page.date | date: date_format }}
           </time>
           {% if page.author %}
-            • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
-          {% endif %}</p>
+          • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card"
+              itemprop="name">{{ page.author }}</span></span>
+          {% endif %}
+
+        </p>
       </div>
     </header>
     <div class="wrapper">
       <div class="post-content e-content" itemprop="articleBody">
         {{ content }}
       </div>
+
       {% if site.disqus.shortname %}
-        {% include disqus_comments.html %}
+      {% include disqus_comments.html %}
       {% endif %}
-      </div>
+
+    </div>
     <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
   </article>
 </main>
+-->
 
-{%- include footer.html -%}
 
-</body>
-</html>
+
+{% include subscription.html %}

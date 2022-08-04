@@ -23,14 +23,20 @@
   color: white;
 }
 
+.left,
+.right,
+.subscribe_form,
 .display_flex {
   display: flex;
+}
+
+.display_flex {
   align-items: center;
   justify-content: center;
   text-align: center;
 }
 
-.w3-padding-48{
+.w3-padding-48 {
   padding-top: 48px !important;
   padding-left: 48px !important;
   padding-right: 48px !important;
@@ -49,7 +55,6 @@
 }
 
 .subscribe_form {
-  display: flex;
   flex-flow: column;
   align-items: center;
 }
@@ -87,8 +92,30 @@
   margin: 6px;
 }
 
-.five_part {
+.left {
+  justify-content: end;
+}
+
+.right {
+  justify-content: start;
+}
+
+.five_part,
+.three_two_parts,
+.half {
   float: left;
-  width: 20%;
   padding: 6px;
+}
+
+
+.five_part {
+  width: 20%;
+}
+
+.three_two_parts {
+  width: 60%;
+}
+
+.half {
+  width: 50%;
 }
