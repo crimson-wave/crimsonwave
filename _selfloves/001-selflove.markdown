@@ -3,6 +3,7 @@ layout: post
 title: "selflove 001"
 date: 2022-07-10 12:33:23 +0200
 categories: selflove
+description: selflove is simply dummy text of the printing and typesetting industry. selflove has been the industry's standard dummy 
 ---
 
 selflove is simply dummy text of the printing and typesetting industry. selflove has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing selflove passages, and more recently with desktop publishing software like Aldus PageMaker including versions of selflove.

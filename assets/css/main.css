@@ -23,6 +23,10 @@
   color: white;
 }
 
+body{
+ background-color:  #E1DCD6;
+}
+
 .left,
 .right,
 .subscribe_form,
@@ -72,6 +76,7 @@
 
 .w3-input {
   padding: 2px;
+  border: 1px solid #ffffff;
 }
 
 .w3-padding-8 {
@@ -109,13 +114,34 @@
 
 
 .five_part {
-  width: 20%;
+  width: 19%;
+}
+.part_15 {
+  width: 15%;
 }
 
 .three_two_parts {
-  width: 60%;
+  width: 70%;
 }
 
 .half {
   width: 50%;
+}
+.top_default{
+  position: relative;
+  height: 140px;
+}
+.post_botton{
+  margin-left: 5%;
+  margin-right: 5%;
+  text-align: left;
+  align-items: flex-start;
+}
+.menu_bottom{
+  padding: 6px;
+  width: 19%;
+}
+.part_75{
+  padding: 6px;
+  width: 75%;
 }

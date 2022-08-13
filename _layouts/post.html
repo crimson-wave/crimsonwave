@@ -1,8 +1,30 @@
 ---
 layout: default
 ---
+<div class="top_default"></div>
+<div class="display_flex" style="align-items: flex-start;">
+  <div class="part_15">
+    {% include menuRedBottom.html %}
+  </div>
+  <div class="part_75">
+    <div class="post_botton">
+      <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
+      {{ content }}
+      {% if page.date  %}
 
-{{ content }}
+      <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+        {{ page.date | date: date_format }}
+      </time>
+      {% endif %}  
+      {% if page.categories  %}
+      <div>
+        <a href="{{site.baseurl}}/pages/{{ page.categories }}.html" class="w3-bar-item2">Back</a>
+      </div>      
+      {% endif %}     
+    </div>
+  </div>
+</div>
 
 <!--
   <main class="page-content" aria-label="Content">
