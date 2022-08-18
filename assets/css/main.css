@@ -64,10 +64,13 @@ body{
 }
 
 .w3-btn,
-.small_header {
+.small_header, .header {
   text-transform: uppercase;
   padding: 6px;
   width: 100%;
+}
+.header {
+  font-size: 150%;
 }
 
 .w3-btn {
