@@ -23,8 +23,8 @@
   color: white;
 }
 
-body{
- background-color:  #E1DCD6;
+body {
+  background-color: #E1DCD6;
 }
 
 .left,
@@ -38,6 +38,10 @@ body{
   align-items: center;
   justify-content: center;
   text-align: center;
+}
+
+.display_top {
+  align-items: normal;
 }
 
 .w3-padding-48 {
@@ -64,11 +68,13 @@ body{
 }
 
 .w3-btn,
-.small_header, .header {
+.small_header,
+.header {
   text-transform: uppercase;
   padding: 6px;
   width: 100%;
 }
+
 .header {
   font-size: 150%;
 }
@@ -119,6 +125,7 @@ body{
 .five_part {
   width: 19%;
 }
+
 .part_15 {
   width: 15%;
 }
@@ -130,21 +137,58 @@ body{
 .half {
   width: 50%;
 }
-.top_default{
+
+.top_default {
   position: relative;
   height: 140px;
 }
-.post_botton{
+
+.post_botton {
   margin-left: 5%;
   margin-right: 5%;
   text-align: left;
   align-items: flex-start;
 }
-.menu_bottom{
+
+.menu_bottom {
   padding: 6px;
   width: 19%;
 }
-.part_75{
+
+.part_75 {
   padding: 6px;
   width: 75%;
+}
+
+.sidebar {
+  display: none;
+  height: 100%;
+  background-color: #fff;
+  position: fixed !important;
+  z-index: 1;
+  overflow: auto;
+}
+
+@media (max-width:600px) {
+  .blue_div {
+    margin: 0px;
+  }
+
+  .blue_div_small {
+    width: 100%;
+  }
+
+  .small_header {
+    line-height: 1;
+    text-transform: lowercase;
+  }
+
+  .w3-padding-48 {
+    padding: 0pt !important;
+    padding-top: 16px;
+  }
+
+  .img_red {
+    height: 75px;
+  }
 }
