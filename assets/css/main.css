@@ -129,6 +129,9 @@ body {
 .part_15 {
   width: 15%;
 }
+.part_35 {
+  width: 35%;
+}
 
 .three_two_parts {
   width: 70%;
@@ -149,6 +152,10 @@ body {
   text-align: left;
   align-items: flex-start;
 }
+.submit{
+  width: 65%;
+  
+}
 
 .menu_bottom {
   padding: 6px;
@@ -163,10 +170,15 @@ body {
 .sidebar {
   display: none;
   height: 100%;
+  width: 200px;
   background-color: #fff;
   position: fixed !important;
   z-index: 1;
   overflow: auto;
+}
+label{
+  text-align: start;
+
 }
 
 @media (max-width:600px) {
