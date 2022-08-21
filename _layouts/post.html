@@ -1,65 +1,54 @@
 ---
 layout: default
 ---
+
 <div class="top_default"></div>
-<div class="display_flex" style="align-items: flex-start;">
-  <div class="part_15">
-    {% include menuRedBottom.html %}
+
+<div class="w3-hide-small">
+  <div class="display_flex" style="align-items: flex-start;">
+    <div class="part_15">
+      {% include menuRedBottom.html %}
+    </div>
+    <div class="part_75">
+      <div class="post_botton">
+        <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
+        {{ content }}
+        {% if page.date %}
+        <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+          {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+          {{ page.date | date: date_format }}
+        </time>
+        {% endif %}
+        {% if page.categories %}
+        <div>
+          <a href="{{site.baseurl}}/pages/{{ page.categories }}.html" class="w3-bar-item2">Back</a>
+        </div>
+        {% endif %}
+      </div>
+    </div>
   </div>
-  <div class="part_75">
+</div>
+
+
+<div class="w3-hide-large w3-hide-medium">
+  <div class="part100">
     <div class="post_botton">
       <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
       {{ content }}
-      {% if page.date  %}
+      {% if page.date %}
 
       <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
         {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
         {{ page.date | date: date_format }}
       </time>
-      {% endif %}  
-      {% if page.categories  %}
+      {% endif %}
+      {% if page.categories %}
       <div>
         <a href="{{site.baseurl}}/pages/{{ page.categories }}.html" class="w3-bar-item2">Back</a>
-      </div>      
-      {% endif %}     
+      </div>
+      {% endif %}
     </div>
   </div>
 </div>
-
-<!--
-  <main class="page-content" aria-label="Content">
-  <article class="post hentry" itemscope itemtype="http://schema.org/BlogPosting">
-    <header class="post-header">
-      <div class="wrapper">
-        <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
-        <p class="post-meta">
-          <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-            {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-            {{ page.date | date: date_format }}
-          </time>
-          {% if page.author %}
-          • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card"
-              itemprop="name">{{ page.author }}</span></span>
-          {% endif %}
-
-        </p>
-      </div>
-    </header>
-    <div class="wrapper">
-      <div class="post-content e-content" itemprop="articleBody">
-        {{ content }}
-      </div>
-
-      {% if site.disqus.shortname %}
-      {% include disqus_comments.html %}
-      {% endif %}
-
-    </div>
-    <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
-  </article>
-</main>
--->
-
-
 
 {% include subscription.html %}

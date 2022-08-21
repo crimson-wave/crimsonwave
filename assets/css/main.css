@@ -154,7 +154,7 @@ body {
 }
 .submit{
   width: 65%;
-  
+
 }
 
 .menu_bottom {
@@ -179,6 +179,9 @@ body {
 label{
   text-align: start;
 
+}
+.sub_menu{
+  margin-left: 6px;
 }
 
 @media (max-width:600px) {

@@ -43,8 +43,22 @@
 
 <nav class="sidebar w3-bar-block w3-white w3-animate-left w3-text-grey w3-collapse w3-top"
   style="z-index: 3; width: 300px; font-weight: bold; display: block; display: none" id="mySidebar"><br>
-  <a href="{{site.baseurl}}/" onclick="w3_close()" class="w3-bar-item w3-button">Main</a>  
-  <a href="{{site.baseurl}}/pages/contraception.html" onclick="w3_close()" class="w3-bar-item w3-button">Education</a>
-  <a href="{{site.baseurl}}/pages/customCup.html" onclick="w3_close()" class="w3-bar-item w3-button">Custom Menstrual Cup</a>
+  <a href="{{site.baseurl}}/" onclick="w3_close()" class="w3-bar-item w3-button">Main</a>
+  <div id="education" onclick="open_submenu('nav_submenu')" class="w3-bar-item w3-button">Education <i
+      class="fa fa-caret-down"></i></div>
+  <div id="nav_submenu" style="display: none">
+    <a href="{{site.baseurl}}/pages/contraception.html" onclick="w3_close()"
+      class="w3-bar-item w3-button  sub_menu">contraception</a>
+    <a href="{{site.baseurl}}/pages/transresources.html" onclick="w3_close()"
+      class="w3-bar-item w3-button  sub_menu">trans resources</a>
+    <a href="{{site.baseurl}}/pages/selflove.html" onclick="w3_close()" class="w3-bar-item w3-button  sub_menu">self
+      love</a>
+    <a href="{{site.baseurl}}/pages/nonbinaryresources.html" onclick="w3_close()"
+      class="w3-bar-item w3-button  sub_menu">non binary resources</a>
+    <a href="{{site.baseurl}}/pages/healthcaresystem.html" onclick="w3_close()"
+      class="w3-bar-item w3-button  sub_menu">health care system</a>
+  </div>
+  <a href="{{site.baseurl}}/pages/customCup.html" onclick="w3_close()" class="w3-bar-item w3-button">Custom Menstrual
+    Cup</a>
   <a href="{{site.baseurl}}/pages/about.html" onclick="w3_close()" class="w3-bar-item w3-button">About Us</a>
 </nav>
